@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package >
+  <metadata>
+    <id>Wafec.AppStack.Shared</id>
+    <version>0.0.2-dev</version>
+    <authors>C. Wallace</authors>
+    <owners>wafec</owners>
+    <description>Wafec AppStack Libs</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <license type="expression">MIT</license>
+    <releaseNotes>Utility</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETFramework4.7.2" />
+    </dependencies>
+    <references>
+      <group targetFramework="net472">
+        <reference file="Wafec.AppStack.Shared.Lang.dll" />
+      </group>
+    </references>
+  </metadata>
+  <files>
+    <file src="Wafec.AppStack.Shared.Lang\bin\Release\*.dll" target="lib\net472" />
+    <file src="Wafec.AppStack.Shared.Lang\bin\Release\*.dll" target="ref\net472" />
+  </files>
+</package>
