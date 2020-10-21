@@ -20,9 +20,21 @@ namespace Wafec.AppStack.Shared.LangTests
         [TestMethod]
         public void TestTrueIfThrowsWithInvalidException()
         {
+            Assert.ThrowsException<OtherCustomException>(() =>
+            {
+                var result = Utility.TrueIfThrows<MyCustomException>(() =>
+                {
+                    throw new OtherCustomException();
+                });
+            });
+        }
+
+        [TestMethod]
+        public void TestTrueIfThrowsWhenNotThrown()
+        {
             var result = Utility.TrueIfThrows<MyCustomException>(() =>
             {
-                throw new OtherCustomException();
+
             });
             Assert.IsFalse(result);
         }

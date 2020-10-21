@@ -13,7 +13,7 @@ namespace Wafec.AppStack.Shared.Lang
             try
             {
                 action();
-                return true;
+                return false;
             }
             catch (Exception exc)
             {

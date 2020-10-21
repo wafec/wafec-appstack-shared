@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Wafec.AppStack.Shared</id>
-    <version>0.0.2-dev</version>
+    <version>0.0.3-dev</version>
     <authors>C. Wallace</authors>
     <owners>wafec</owners>
     <description>Wafec AppStack Libs</description>
